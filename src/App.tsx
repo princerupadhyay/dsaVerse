@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   useLocation,
@@ -139,10 +139,10 @@ function AppRoutes() {
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <HashRouter>
         <FirebaseSync />
         <AppRoutes />
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 }
